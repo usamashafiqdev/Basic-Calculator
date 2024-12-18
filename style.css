@@ -1,0 +1,159 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    
+}
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav links */
+    align-items: center; /* Vertically center items */
+    padding: 10px 20px;
+    background-color:#EFEFEF;
+    /* color: white; */
+}
+
+/* Logo section on the left */
+.main {
+    display: flex;
+    gap: 2vw;
+}
+
+.main img {
+    width: 5vw;
+    border-radius: 50%;
+}
+
+.logo {
+    color: #6e80f3;
+    font-size: 34px;
+    font-weight: bold;
+    margin: 2vh;
+}
+
+
+
+/* Navbar links section on the right */
+.navbar-links {
+    display: flex;
+    gap: 20px; /* Space between the links */
+}
+
+.navbar-links a {
+    color:  #6e80f3;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+
+
+/* Hover effect for the links */
+.navbar-links a:hover {
+    text-decoration: none;
+    color: white;
+    
+}
+
+/* Responsive Design: For smaller screens */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack logo and links vertically */
+        align-items: flex-start; /* Align items to the left */
+    }
+    .navbar-links {
+        width: 100%; /* Make the links take the full width */
+        justify-content: space-evenly; /* Spread out the links */
+        margin-top: 10px;
+    }
+    .navbar-links a {
+        font-size: 18px; /* Make the links a bit larger on small screens */
+        text-align: center; /* Center-align the links */
+    }
+}
+
+
+.container {
+    display: flex; /* Use flexbox to divide the container */
+    height: 100vh; /* Full viewport height */
+}
+
+/* Left half section */
+.left-half {
+    flex: 1; /* Take up 50% of the container */
+    background-color: #EFEFEF; /* Light background for visibility */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+/* Right half section */
+.right-half {
+    flex: 1; /* Take up 50% of the container */
+    background-color: #EFEFEF; /* Light background for visibility */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.detel{
+    margin-left: 8%; */
+
+}
+
+.detel h1{
+    font-size: 50px;
+    color: #212121;
+
+}
+
+span{
+    color: #6e80f3;
+}
+
+.detel p{
+    color:black;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+
+/* Responsive Design: Stack sections for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack the sections vertically */
+    }
+    .left-half, .right-half {
+        width: 100%; /* Ensure each section takes full width */
+    }
+}
+
+
+.button {
+    background-color: #6e80f3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color:  #3247d1;
+}
+
+@media (max-width: 600px) {
+    .button {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+    }
+}
